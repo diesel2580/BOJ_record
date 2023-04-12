@@ -21,8 +21,7 @@ int search(int start, int end) {
 			wood += num[i] - mid;
 	}
 	if (wood >= m) {
-		if (tmpW < wood) {
-			tmpW = wood;
+		if (tmpH > mid) {
 			tmpH = mid;
 		}
 		return search(mid + 1, end);
